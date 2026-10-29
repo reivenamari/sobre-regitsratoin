@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Registry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="envelope">✉</div>
+      <h1>Sobre Registry</h1>
+      <p>Irehistro at pamahalaan ang mga pangalan ng pagbibigyan.</p>
+    </header>
+
+    <section class="card">
+      <h2>Magrehistro ng Pagbibigyan</h2>
+
+      <form id="recipientForm">
+        <label for="giver">Pangalan ng nagbigay</label>
+        <select id="giver" required>
+          <option value="">Pumili ng pangalan</option>
+          <option>John Rex</option>
+          <option>Vhernadeth</option>
+          <option>Reiven</option>
+          <option>Irish</option>
+          <option>Micha</option>
+          <option>Bianca</option>
+          <option>Renshi</option>
+        </select>
+
+        <label for="recipient">Pangalan ng pagbibigyan</label>
+        <input
+          id="recipient"
+          type="text"
+          maxlength="100"
+          placeholder="Ilagay ang buong pangalan"
+          required
+        >
+
+        <button id="addButton" type="submit">I-save ang Pangalan</button>
+      </form>
+
+      <p id="message" class="message" role="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>Listahan ng mga Pagbibigyan</h2>
+      <p class="hint">Hanggang 10 pangalan bawat nagbigay. Pindutin ang Delete kung nais mag-alis ng pangalan.</p>
+      <div id="registry" class="registry"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
